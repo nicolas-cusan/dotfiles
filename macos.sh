@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+echo -e "\\n\\nSetting OS X settings"
+echo "=============================="
 
 # Set custom OS X defaults
 # See: github.com/mathiasbynens/dotfiles

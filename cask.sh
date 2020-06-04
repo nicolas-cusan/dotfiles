@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+echo -e "\\n\\nInstalling Cask binaries"
+echo "=============================="
 ​
 # Install command-line tools using Homebrew.
 # Install Brew and Cask manually
@@ -18,46 +21,30 @@ brew cask install font-iosevka
 brew cask install font-source-code-pro
 ​
 # Casks
-
-brew cask install autofirma
-brew cask install bitwarden
-brew cask install daisydisk
-brew cask install dropbox
-brew cask install docker
-brew cask install caret
-brew cask install firefox
-brew cask install forklift
-brew cask install imageoptim
-brew cask install imagealpha
-brew cask install jumpcut
-brew cask install monodraw
-brew cask install nextcloud
-brew cask install rightfont
-brew cask install sketch
-brew cask install soulver
-brew cask install superduper
-brew cask install thyme
-brew cask install xscope
-brew cask install vagrant
-brew cask install mas
-
 brew cask install authy
-# brew cask install balenaetcher
+brew cask install autofirma
 brew cask install bartender
-# brew cask install beardedspice
+brew cask install bitwarden
 brew cask install calibre
-# brew cask install chromium
+brew cask install caret
+brew cask install daisydisk
 brew cask install dash
 brew cask install diffmerge
-# brew cask install duet
-# brew cask install exodus
+brew cask install docker
+brew cask install dropbox
+brew cask install firefox
+brew cask install forklift
 brew cask install google-chrome
+brew cask install imagealpha
+brew cask install imageoptim
 brew cask install iterm2
-# brew cask install java
 brew cask install jdownloader
-# brew cask install ledger-live
+brew cask install jumpcut
+brew cask install kaleidoscope
 brew cask install little-snitch
-# brew cask install plug
+brew cask install mas
+brew cask install monodraw
+brew cask install nextcloud
 brew cask install postman
 brew cask install qlcolorcode
 brew cask install qlimagesize
@@ -66,22 +53,23 @@ brew cask install qlstephen
 brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install rectangle
+brew cask install rightfont
 brew cask install robo-3t
 brew cask install signal
+brew cask install sketch
 brew cask install skype
 brew cask install slack
+brew cask install soulver
 brew cask install spotify
-# brew cask install steam
-# brew cask install sublime-merge
 brew cask install sublime-text
+brew cask install superduper
 brew cask install suspicious-package
 brew cask install the-unarchiver
-# brew cask install tipp10
+brew cask install thyme
 brew cask install transmission
-# brew cask install transmit
-# brew cask install unetbootin
+brew cask install vagrant
 brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
-# brew cask install whatsapp
+brew cask install xscope
 brew cleanup
