@@ -1,0 +1,15 @@
+composer
+coreutils
+curl
+ffmpeg
+git
+grip
+mysql
+openssh
+php@7.2
+python3
+rbenv
+sass
+yarn
+wget
+zsh-autosuggestions
