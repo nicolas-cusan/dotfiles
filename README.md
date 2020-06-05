@@ -2,7 +2,7 @@
 
 ## Setup new macos box
 
-### 0. Initial steps when setting up a new macOS system
+### 1. Initial steps when setting up a new macOS system
 
 - Initial mac setup via system dialogs
   - User Filevault
@@ -13,13 +13,13 @@
   - Change computer name
   - Make sure all file sharing is disabled
 
-### 1. Install Homebrew
+### 2. Install Homebrew
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-### 2. Setup SSH
+### 3. Setup SSH
 
 Generate ssh-key.
 
@@ -34,7 +34,7 @@ Add key.
 ssh-add -K ~/.ssh/id_rsa
 ```
 
-### 3. Dotfiles setup scripts
+### 4. Dotfiles setup scripts
 
 Clone dotfiles repo (location matters).
 
@@ -57,7 +57,7 @@ What the script will do (in execution order):
 - Install Xcode, Active Collab Timer & xScope via [mas](https://github.com/mas-cli/mas)
 - Setup the dock
 
-### 4. oh my zsh
+### 5. oh my zsh
 
 Install oh my zsh
 
@@ -65,7 +65,7 @@ Install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### 5. nvm & node.js
+### 6. nvm & node.js
 
 Install nvm, the latest `lts` node version & some global packages
 
@@ -75,14 +75,14 @@ nvm install --lts
 npm install -g npm prettier npm-check-updates
 ```
 
-### 6. Install VSCode extensions
+### 7. Install VSCode extensions
 
 ```
 cd ~/.dotfiles
 sh vscode.sh
 ```
 
-### 7. Configuration
+### 8. Configuration
 
 Install config files (dotfiles & mac app files) via [mackup](https://github.com/lra/mackup) (backupd on Dropbox, will change to iCloud Drive)
 
@@ -91,11 +91,11 @@ cd ~/.dotfiles
 sh config.sh
 ```
 
-### 8. Install Little Snitch
+### 9. Install Little Snitch
 
 `.dmg` file installed via cask will be located at `/usr/local/Caskroom/little-snitch/` and has to be executed manually
 
-### 9. Further manual steps
+### 10. Further manual steps
 
 - [x] Sing-in to Chrome
 - [x] Sing-in to Firefox
