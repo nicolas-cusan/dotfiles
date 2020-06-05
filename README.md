@@ -97,22 +97,28 @@ sh config.sh
 
 ### 9. Further manual steps
 
-[x] Sing-in to Chrome
-[x] Sing-in to Firefox
-[x] Setup Mail Accounts & Calendar
-[x] Copy Old Mailboxes ??
-[x] Setup login items: Thyme, nextcloud, Dropbox, Rectangle, Bartender, Jumpcut
-[x] Activate Zooming in System preferences
-[x] Set Desktop Color
-[x] Setup nexcloud account
-[ ] Install Adobe CC
-[ ] Transfer virtual machines
-[ ] Transfer iTunes Music
-[ ] Transfer or install digital certificate
-[ ] Setup licenses for all programs that require licenses
-[ ] Add new ssh key to services (GitHub, GitLab)
-[ ] Move old photos
-[ ] Move Sparkleshare stuff
+- [x] Sing-in to Chrome
+- [x] Sing-in to Firefox
+- [x] Setup Mail Accounts & Calendar
+- [x] Copy Old Mailboxes ??
+- [x] Setup login items:
+  - Thyme
+  - nextcloud
+  - Dropbox
+  - Rectangle
+  - Bartender
+  - Jumpcut
+- [x] Activate Zooming in System preferences
+- [x] Set Desktop Color
+- [x] Setup nexcloud account
+- [ ] Install Adobe CC
+- [ ] Transfer virtual machines
+- [ ] Transfer iTunes Music
+- [ ] Transfer or install digital certificate
+- [ ] Setup licenses for all programs that require licenses
+- [ ] Add new ssh key to services (GitHub, GitLab)
+- [ ] Move old photos
+- [ ] Move Sparkleshare stuff
 
 ## Issues on last install (05.06.2020)
 
