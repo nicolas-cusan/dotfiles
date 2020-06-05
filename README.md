@@ -137,11 +137,11 @@ sh config.sh
 
 ## Links
 
-https://github.com/webpro/dotfiles
-https://github.com/lra/mackup
-https://github.com/necolas/dotfiles
-https://github.com/gf3/dotfiles
-https://github.com/alrra/dotfiles
-https://github.com/mas-cli/mas
-https://github.com/mathiasbynens/dotfiles
-https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
+- https://github.com/webpro/dotfiles
+- https://github.com/lra/mackup
+- https://github.com/necolas/dotfiles
+- https://github.com/gf3/dotfiles
+- https://github.com/alrra/dotfiles
+- https://github.com/mas-cli/mas
+- https://github.com/mathiasbynens/dotfiles
+- https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
