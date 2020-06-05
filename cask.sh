@@ -16,7 +16,7 @@ brew upgrade
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 brew cask install font-m-plus
-brew cask install font-meslo
+brew cask install font-meslo-for-powerline
 brew cask install font-iosevka
 brew cask install font-source-code-pro
 ​
@@ -42,7 +42,6 @@ brew cask install jdownloader
 brew cask install jumpcut
 brew cask install kaleidoscope
 brew cask install little-snitch
-brew cask install mas
 brew cask install monodraw
 brew cask install nextcloud
 brew cask install postman

@@ -16,6 +16,7 @@ brew install ffmpeg
 brew install git
 brew install grip
 brew install mackup
+brew install mas
 brew install mysql
 brew install openssh
 brew install php@7.2
