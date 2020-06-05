@@ -14,10 +14,10 @@ brew upgrade
 ​
 # Fonts
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
-brew cask install font-m-plus
+# brew cask install font-fira-code
+# brew cask install font-m-plus
 brew cask install font-meslo-for-powerline
-brew cask install font-iosevka
+# brew cask install font-iosevka
 brew cask install font-source-code-pro
 ​
 # Casks
