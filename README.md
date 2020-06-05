@@ -145,3 +145,7 @@ sh config.sh
 - https://github.com/mas-cli/mas
 - https://github.com/mathiasbynens/dotfiles
 - https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
+- https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
+- ~ https://github.com/holman/dotfiles
+- ~ https://github.com/nicknisi/dotfiles
+- ~ https://github.com/zsh-users/zsh-syntax-highlighting
