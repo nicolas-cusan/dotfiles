@@ -1,22 +1,45 @@
 # dotfiles
 
+## Todo
+
+- VS Code packages https://github.com/webpro/dotfiles/blob/master/install/Codefile
+- https://superuser.com/questions/1080682/how-do-i-back-up-my-vs-code-settings-and-list-of-installed-extensions
+
 ## Initial steps when setting up a new macOS system
 
-1. Initial mac setup via system dialogs
-   - User Filevault
-   - Use Locations services
-2. Check for Updates & install if any
-3. Setup iCloud preferences
-4. Sharing
-   - Change computer name
-   - Make sure all file sharing is disabled
-5. Install [homebrew](https://brew.sh/)
+- Initial mac setup via system dialogs
+  - User Filevault
+  - Use Locations services
+- Check for Updates macOS updates & install if any
+- Setup iCloud preferences
+- Setup sharing preferences
+  - Change computer name
+  - Make sure all file sharing is disabled
 
 ## Dotfiles installation
 
-Clone dotfiles repo
+Install Homebrew
 
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+
+Generate ssh-key.
+
+```bash
+mkdir ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "email@example.com"
+```
+
+Add key.
+
+```bash
+ssh-add -K ~/.ssh/id_rsa
+```
+
+Clone dotfiles repo. The location exact location is important.
+
+```bash
 git clone https://github.com/nicolas-cusan/dotfiles.git ~/.dotfiles
 ```
 
@@ -27,46 +50,75 @@ cd ~/.dotfiles
 sh setup.sh
 ```
 
-1. Set System defaults
-2. Install homebrew formulae
-3. Install cask binaries & powerline fonts
-4. Install oh my zsh
-5. Install nvm & latest node version
-6. Install xcode, activecollabtimer using mas command
-   <!-- 7. Sync .gitprofile (needs to be copied) -->
-      <!-- 13. Sync .zshrc -->
-      <!-- 13. Sync VSCode preferences & pacakges https://superuser.com/questions/1080682/how-do-i-back-up-my-vs-code-settings-and-list-of-installed-extensions -->
-      <!-- 25. Sync forklift favorites -->
-      <!-- 14. Sync Sublime Preferences -->
-      <!-- 15. Sync iterm preferences -->
+What the script will do (in execution order):
 
-## Manual steps
+- Install homebrew formulae
+- Install cask binaries & powerline fonts
+- Set macOS System defaults
+- Install Xcode & Active Collab Timer via [mas](https://github.com/mas-cli/mas)
+- Setup the dock
 
-1. Copy Old Mailboxes ??
-2. Setup Mail Accounts & Calendar
-3. Setup login items
+## Next Steps
+
+Install oh my zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Install nvm, the latest `lts` node version & some global packages
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install --lts
+npm install -g npm prettier npm-check-updates
+```
+
+Install config files via [mackup](https://github.com/lra/mackup) (backupd on iCloud Drive)
+
+```
+cd ~/.dotfiles
+sh config.sh
+```
+
+Install VSCode extensions
+
+```
+cd ~/.dotfiles
+sh vscode.sh
+```
+
+## Further manual steps
+
+1. Setup Mail Accounts & Calendar
+2. Copy Old Mailboxes ??
+3. Setup login items:
+   - Thyme
+   - nextcloud
+   - Dropbox
+   - Rectangle
+   - Bartender
+   - Jumpcut
 4. Chrome
-   1. Sync bookmarks & prefs
-   2. Install ublock origin
-   3. Install bitwarden
-   4. Install browserstack
-   5. Install React Devtools
-   6. Install Redux Devtools
-   7. Install JSON Viewer
-   8. Install BrowserStack Local
+   - Sync bookmarks & prefs
+   - Install ublock origin
+   - Install bitwarden
+   - Install browserstack
+   - Install browserStack Local
+   - Install React Devtools
+   - Install Redux Devtools
+   - Install JSON Viewer
 5. Install infomaniak profiles
 6. Transfer virtual maschines
-7. Transfer desktop & other files
-8. Transfer iTunes Music
-9. Move Sparkleshare stuff
-10. Move old photos
-11. Transfer or install digital certificate
-12. Install adobe CC
-13. Setup nexcloud account
-14. Setup licenses for all programs that require licenses
-15. Generate ssh-key & setup ssh config
+7. Transfer iTunes Music
+8. Transfer or install digital certificate
+9. Setup nexcloud account
+10. Setup licenses for all programs that require licenses
+
+11. Move old photos
+12. Transfer desktop & other files
+13. Move Sparkleshare stuff
 
 ## Goals
 
 1. Be able to save all settings and sync-up later
-2. Sync macos binary preferences https://github.com/lra/mackup

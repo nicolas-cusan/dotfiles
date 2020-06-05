@@ -3,4 +3,5 @@
 source ./brew.sh
 source ./cask.sh
 source ./macos.sh
-source ./config.sh
+source ./appstore.sh
+source ./doc.sh

@@ -25,5 +25,6 @@ brew install \
   sass \
   yarn \
   wget \
+  zsh \
   zsh-autosuggestions \
   /
