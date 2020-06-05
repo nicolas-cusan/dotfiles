@@ -149,3 +149,4 @@ sh config.sh
 - ~ https://github.com/holman/dotfiles
 - ~ https://github.com/nicknisi/dotfiles
 - ~ https://github.com/zsh-users/zsh-syntax-highlighting
+- https://blog.macsales.com/55671-move-or-manage-the-music-apple-tv-and-podcasts-libraries/
