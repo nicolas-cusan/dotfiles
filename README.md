@@ -69,7 +69,7 @@ nvm install --lts
 npm install -g npm prettier npm-check-updates
 ```
 
-Install config files via [mackup](https://github.com/lra/mackup) (backupd on iCloud Drive)
+Install config files via [mackup](https://github.com/lra/mackup) (backupd on Dropbox, will change to iCloud Drive)
 
 ```
 cd ~/.dotfiles
@@ -85,33 +85,25 @@ sh vscode.sh
 
 ## Further manual steps
 
-1. Setup Mail Accounts & Calendar
-2. Copy Old Mailboxes ??
-3. Setup login items:
+1. Sing-in to Chrome
+2. Sing-in to Firefox
+3. Setup Mail Accounts & Calendar
+4. Copy Old Mailboxes ??
+5. Setup login items:
    - Thyme
    - nextcloud
    - Dropbox
    - Rectangle
    - Bartender
    - Jumpcut
-4. Chrome
-   - Sync bookmarks & prefs
-   - Install ublock origin
-   - Install bitwarden
-   - Install browserstack
-   - Install browserStack Local
-   - Install React Devtools
-   - Install Redux Devtools
-   - Install JSON Viewer
-5. Install infomaniak profiles
-6. Transfer virtual maschines
-7. Transfer iTunes Music
-8. Transfer or install digital certificate
-9. Setup nexcloud account
-10. Setup licenses for all programs that require licenses
-11. Add new ssh key to services (GitHub, GitLab)
-12. Activate Zooming in System preferences
-13. Set Desktop Color
+6. Activate Zooming in System preferences
+7. Set Desktop Color
+8. Setup nexcloud account
+9. Transfer virtual machines
+10. Transfer iTunes Music
+11. Transfer or install digital certificate
+12. Setup licenses for all programs that require licenses
+13. Add new ssh key to services (GitHub, GitLab)
 
 14. Move old photos
 15. Transfer desktop & other files
@@ -120,3 +112,18 @@ sh vscode.sh
 ## Goals
 
 1. Be able to save all settings and sync-up later
+
+## Todo
+
+Global gitignore
+
+## Links
+
+https://github.com/webpro/dotfiles
+https://github.com/lra/mackup
+https://github.com/necolas/dotfiles
+https://github.com/gf3/dotfiles
+https://github.com/alrra/dotfiles
+https://github.com/mas-cli/mas
+https://github.com/mathiasbynens/dotfiles
+https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
