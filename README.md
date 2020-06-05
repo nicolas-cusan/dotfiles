@@ -32,7 +32,7 @@ Add key.
 ssh-add -K ~/.ssh/id_rsa
 ```
 
-Clone dotfiles repo. The location exact location is important.
+Clone dotfiles repo (location matters).
 
 ```bash
 git clone https://github.com/nicolas-cusan/dotfiles.git ~/.dotfiles
@@ -83,39 +83,47 @@ cd ~/.dotfiles
 sh vscode.sh
 ```
 
+Install Little Snitch, `.dmg` will be located at `/usr/local/Caskroom/little-snitch/`
+
 ## Further manual steps
 
-1. Sing-in to Chrome
-2. Sing-in to Firefox
-3. Setup Mail Accounts & Calendar
-4. Copy Old Mailboxes ??
-5. Setup login items:
-   - Thyme
-   - nextcloud
-   - Dropbox
-   - Rectangle
-   - Bartender
-   - Jumpcut
-6. Activate Zooming in System preferences
-7. Set Desktop Color
-8. Setup nexcloud account
-9. Transfer virtual machines
-10. Transfer iTunes Music
-11. Transfer or install digital certificate
-12. Setup licenses for all programs that require licenses
-13. Add new ssh key to services (GitHub, GitLab)
+- Sing-in to Chrome
+- Sing-in to Firefox
+- Setup Mail Accounts & Calendar
+- Copy Old Mailboxes ??
+- Setup login items:
+  - Thyme
+  - nextcloud
+  - Dropbox
+  - Rectangle
+  - Bartender
+  - Jumpcut
+- Activate Zooming in System preferences
+- Set Desktop Color
+- Setup nexcloud account
 
-14. Move old photos
-15. Transfer desktop & other files
-16. Move Sparkleshare stuff
+- Install Adobe CC
+- Transfer virtual machines
+- Transfer iTunes Music
+- Transfer or install digital certificate
+- Setup licenses for all programs that require licenses
+- Add new ssh key to services (GitHub, GitLab)
+- Move old photos
+- Move Sparkleshare stuff
 
-## Goals
+## Issues on last install (05.06.2020)
 
-1. Be able to save all settings and sync-up later
+- `brew cask install dash` not working, wrong download link
+- `brew cask install jdownload` throws an error claiming that jDownloader requires java to work (but seems to work fine)
+- `brew cask install xscope` not working, checksum not matching. Installed via `mas`
+- The `nextcloud` account login does not work with the latest client version. Installed an old version manually to get it working.
 
 ## Todo
 
-Global gitignore
+- Add global gitignore
+- Handle dotfiles manually instead of via mackup
+- Define how to update / sync with other machine / react to changes in the files
+- Update macos settings with this: https://raw.githubusercontent.com/mathiasbynens/dotfiles/master/.macos
 
 ## Links
 
