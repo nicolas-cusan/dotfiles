@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
  if hash code 2>/dev/null; then
   echo -e "\\n\\nInstalling VSCode extensions"

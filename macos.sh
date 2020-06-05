@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 echo -e "\\n\\nSetting OS X settings"
 echo "=============================="

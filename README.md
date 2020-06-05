@@ -1,10 +1,5 @@
 # dotfiles
 
-## Todo
-
-- VS Code packages https://github.com/webpro/dotfiles/blob/master/install/Codefile
-- https://superuser.com/questions/1080682/how-do-i-back-up-my-vs-code-settings-and-list-of-installed-extensions
-
 ## Initial steps when setting up a new macOS system
 
 - Initial mac setup via system dialogs
@@ -114,10 +109,11 @@ sh vscode.sh
 8. Transfer or install digital certificate
 9. Setup nexcloud account
 10. Setup licenses for all programs that require licenses
+11. Add new ssh key to services (GitHub, GitLab)
 
-11. Move old photos
-12. Transfer desktop & other files
-13. Move Sparkleshare stuff
+12. Move old photos
+13. Transfer desktop & other files
+14. Move Sparkleshare stuff
 
 ## Goals
 

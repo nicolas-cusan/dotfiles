@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 echo -e "\\n\\nInstalling Cask binaries"
 echo "=============================="

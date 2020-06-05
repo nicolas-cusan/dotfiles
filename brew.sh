@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 echo -e "\\n\\nInstalling brew packages"
 echo "=============================="
@@ -9,22 +9,19 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew install \
-  composer \
-  coreutils \
-  curl \
-  ffmpeg  \
-  git \
-  grip \
-  mackup \
-  mysql \
-  openssh \
-  php@7.2 \
-  python3 \
-  rbenv \
-  sass \
-  yarn \
-  wget \
-  zsh \
-  zsh-autosuggestions \
-  /
+brew install composer
+brew install coreutils
+brew install curl
+brew install ffmpeg
+brew install git
+brew install grip
+brew install mackup
+brew install mysql
+brew install openssh
+brew install php@7.2
+brew install python3
+brew install rbenv
+brew install yarn
+brew install wget
+brew install zsh
+brew install zsh-autosuggestions

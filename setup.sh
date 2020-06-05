@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 source ./brew.sh
 source ./cask.sh
