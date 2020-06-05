@@ -70,5 +70,6 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
-brew cask install xscope
+# not working atm.
+# brew cask install xscope
 brew cleanup

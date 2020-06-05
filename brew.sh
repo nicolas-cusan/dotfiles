@@ -12,6 +12,7 @@ brew upgrade
 brew install composer
 brew install coreutils
 brew install curl
+brew install dockutil
 brew install ffmpeg
 brew install git
 brew install grip

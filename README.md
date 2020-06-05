@@ -110,10 +110,12 @@ sh vscode.sh
 9. Setup nexcloud account
 10. Setup licenses for all programs that require licenses
 11. Add new ssh key to services (GitHub, GitLab)
+12. Activate Zooming in System preferences
+13. Set Desktop Color
 
-12. Move old photos
-13. Transfer desktop & other files
-14. Move Sparkleshare stuff
+14. Move old photos
+15. Transfer desktop & other files
+16. Move Sparkleshare stuff
 
 ## Goals
 
