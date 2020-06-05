@@ -1,4 +1,4 @@
-# dotfiles
+# .dotfiles
 
 ## Initial steps when setting up a new macOS system
 
@@ -11,13 +11,13 @@
   - Change computer name
   - Make sure all file sharing is disabled
 
-## Dotfiles installation
-
-Install Homebrew
+## Install Homebrew
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+
+## Setup SSH
 
 Generate ssh-key.
 
@@ -31,6 +31,8 @@ Add key.
 ```bash
 ssh-add -K ~/.ssh/id_rsa
 ```
+
+## Dotfiles installation
 
 Clone dotfiles repo (location matters).
 
