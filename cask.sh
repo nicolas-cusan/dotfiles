@@ -22,7 +22,7 @@ brew cask install font-source-code-pro
 ​
 # Casks
 brew cask install authy
-brew cask install autofirma
+# brew cask install autofirma
 brew cask install bartender
 brew cask install bitwarden
 brew cask install calibre
