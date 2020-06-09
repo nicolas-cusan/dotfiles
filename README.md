@@ -93,14 +93,13 @@ sh config.sh
 
 ### 9. Install Little Snitch
 
-`.dmg` file installed via cask will be located at `/usr/local/Caskroom/little-snitch/` and has to be executed manually
+`.dmg` file installed via cask will be located at `/usr/local/Caskroom/little-snitch/` and has to be executed manually, restart computer (required) and enter license-key. Export rules via Little Snitch backup feature and import on new the new computer.
 
 ### 10. Further manual steps
 
 - [x] Sing-in to Chrome
 - [x] Sing-in to Firefox
 - [x] Setup Mail Accounts & Calendar
-- [x] Copy Old Mailboxes ??
 - [x] Setup login items:
   - Thyme
   - nextcloud
@@ -111,14 +110,20 @@ sh config.sh
 - [x] Activate Zooming in System preferences
 - [x] Set Desktop Color
 - [x] Setup nexcloud account
-- [ ] Install Adobe CC
-- [ ] Transfer virtual machines
-- [ ] Transfer iTunes Music
+- [x] Install Adobe CC
+- [x] Transfer iTunes Music
+- [x] Transfer relevant entries from `/etc/hosts/`
+- [x] Importing old vagrant box (without existing dbs):
+  1. On old system export old vagrant box, useing `vagrant box list` to get the name, provider and ID and `vagrant box repackage` to package it.
+  2. Copy vagrant folder (e.g. php72) & fresh box export to new computer
+  3. install box by using `vagrant box add <PATH_TO_BOX>`
+  4. `cd` to vagrant folder and run `vagrant up`
+- [x] Setup licenses for all programs that require licenses
+- [x] Add new ssh key to services (GitHub, GitLab)
+- [x] Move old photos
+- [x] Move Sparkleshare stuff
+- [ ] Copy & import old Mailboxes ??
 - [ ] Transfer or install digital certificate
-- [ ] Setup licenses for all programs that require licenses
-- [ ] Add new ssh key to services (GitHub, GitLab)
-- [ ] Move old photos
-- [ ] Move Sparkleshare stuff
 
 ## Issues on last install (05.06.2020)
 
@@ -127,13 +132,18 @@ sh config.sh
 - `brew cask install xscope` not working, checksum not matching. Installed via `mas`
 - The `nextcloud` account login does not work with the latest client version. Installed an old version manually to get it working.
 - `macos.sh` did not run smoothly, it seems to have some option that makes the script execution fail & stop. Should be updated (see todos).
+- `brew cask install virtualbox` produces some errors as the installer is not signed. If lucky a accept dialog is shown in `System Preferences > Security & privacy > General`. If not you need to add Oracle to the list of trusted developers:
+  1. Boot into recovery mode: Shut down the system and hold `Cmd + R` while booting.
+  2. Enter your password in the recover password screen (you might be able to skip this step if your drive is not encrypted).
+  3. Open the terminal and enter `spctl kext-consent add VR5E2TV963` (allow the ID for Oracle).
+  4. Restart and try installation again.
 
 ## Todo
 
 - Add global gitignore
 - Handle dotfiles manually instead of via mackup
 - Define how to update / sync with other machine / react to changes in the files
-- Update macos settings with this: https://raw.githubusercontent.com/mathiasbynens/dotfiles/master/.macos
+- Update macos settings with this: https://raw.githubusercontent.com/mathiasbynens/dotfiles/master/.macos. Ideally compare to fresh install defaults
 
 ## Links
 
