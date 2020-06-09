@@ -67,7 +67,7 @@ brew cask install the-unarchiver
 brew cask install thyme
 brew cask install transmission
 brew cask install vagrant
-brew cask install virtualbox
+# brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
 # not working atm.
