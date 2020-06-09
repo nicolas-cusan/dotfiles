@@ -160,3 +160,18 @@ sh config.sh
 - ~ https://github.com/nicknisi/dotfiles
 - ~ https://github.com/zsh-users/zsh-syntax-highlighting
 - https://blog.macsales.com/55671-move-or-manage-the-music-apple-tv-and-podcasts-libraries/
+
+## Files to backup
+
+- .gitconfig
+- .oh-my-zsh/
+- .ssh/config
+- .zshrc
+- Library/Application Support/Code/User/
+  - keybindings.json
+  - settings.json
+  - snippets/\*\*
+- Library/Application Support/Jumpcut/JCEngine.save
+- Library/Application Support/Sublime Text/User
+- Library/Preferences/com.apple.symbolichotkeys.plist
+- Library/Preferences/net.sf.Jumpcut.plist
