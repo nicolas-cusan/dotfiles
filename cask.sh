@@ -2,16 +2,16 @@
 
 echo -e "\\n\\nInstalling Cask binaries"
 echo "=============================="
-​
+
 # Install command-line tools using Homebrew.
 # Install Brew and Cask manually
-​
+
 # Make sure we’re using the latest Homebrew.
 brew update
-​
+
 # Upgrade any already-installed formulae.
 brew upgrade
-​
+
 # Fonts
 brew tap homebrew/cask-fonts
 # brew cask install font-fira-code
@@ -19,7 +19,7 @@ brew tap homebrew/cask-fonts
 brew cask install font-meslo-for-powerline
 # brew cask install font-iosevka
 brew cask install font-source-code-pro
-​
+
 # Casks
 brew cask install authy
 # brew cask install autofirma
