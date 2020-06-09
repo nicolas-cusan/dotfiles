@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# macOS defaults - minimal version
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Show the ~/Library folder
+chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
