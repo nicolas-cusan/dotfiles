@@ -110,18 +110,18 @@ sh config.sh
 - [x] Activate Zooming in System preferences
 - [x] Set Desktop Color
 - [x] Setup nexcloud account
-- [x] Install Adobe CC
-- [x] Transfer iTunes Music
-- [x] Transfer relevant entries from `/etc/hosts/`
-- [x] Importing old vagrant box (without existing dbs):
+- [x] Sign in to all Slack teams
+- [ ] Install Adobe CC
+- [ ] Transfer iTunes Music
+- [ ] Transfer relevant entries from `/etc/hosts/`
+- [ ] Importing old vagrant box (without existing dbs):
   1. On old system export old vagrant box, useing `vagrant box list` to get the name, provider and ID and `vagrant box repackage` to package it.
   2. Copy vagrant folder (e.g. php72) & fresh box export to new computer
   3. install box by using `vagrant box add <PATH_TO_BOX>`
   4. `cd` to vagrant folder and run `vagrant up`
-- [x] Setup licenses for all programs that require licenses
-- [x] Add new ssh key to services (GitHub, GitLab)
-- [x] Move old photos
-- [x] Move Sparkleshare stuff
+- [ ] Setup licenses for all programs that require licenses
+- [ ] Add new ssh key to services (GitHub, GitLab)
+- [ ] Move old photos
 - [ ] Copy & import old Mailboxes ??
 - [ ] Transfer or install digital certificate
 
@@ -175,3 +175,5 @@ sh config.sh
 - Library/Application Support/Sublime Text/User
 - Library/Preferences/com.apple.symbolichotkeys.plist
 - Library/Preferences/net.sf.Jumpcut.plist
+- Library/Preferences/com.googlecode.iterm2.plist
+- com.surteesstudios.Bartender.plist
