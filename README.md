@@ -150,7 +150,7 @@ The following configuration files & folders files are symlinked (destination loc
   - install box by using `vagrant box add <PATH_TO_BOX>`
   - `cd` to vagrant folder and run `vagrant up`
 - [ ] Move old photos
-- [ ] Copy & import old Mailboxes ??
+- [ ] Copy & import old local mailboxes
 - [ ] Transfer or install digital certificate
 
 ## Caveats
@@ -180,7 +180,7 @@ If `brew cask install virtualbox` produces errors it might be due to the fact th
 - https://github.com/mathiasbynens/dotfiles
 - https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/
 - https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
-- ~ https://github.com/holman/dotfiles
-- ~ https://github.com/nicknisi/dotfiles
-- ~ https://github.com/zsh-users/zsh-syntax-highlighting
+- https://github.com/holman/dotfiles
+- https://github.com/nicknisi/dotfiles
+- https://github.com/zsh-users/zsh-syntax-highlighting
 - https://blog.macsales.com/55671-move-or-manage-the-music-apple-tv-and-podcasts-libraries/
