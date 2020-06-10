@@ -163,17 +163,20 @@ sh config.sh
 
 ## Files to backup
 
-- .gitconfig
-- .oh-my-zsh/
-- .ssh/config
-- .zshrc
-- Library/Application Support/Code/User/
-  - keybindings.json
-  - settings.json
-  - snippets/\*\*
-- Library/Application Support/Jumpcut/JCEngine.save
-- Library/Application Support/Sublime Text/User
-- Library/Preferences/com.apple.symbolichotkeys.plist
-- Library/Preferences/net.sf.Jumpcut.plist
-- Library/Preferences/com.googlecode.iterm2.plist
-- com.surteesstudios.Bartender.plist
+- ~/.gitconfig
+- ~/.oh-my-zsh/
+- ~/.ssh/config
+- ~/.zshrc
+- ~/Library/Application Support/Code/User/keybindings.json
+- ~/Library/Application Support/Code/User/settings.json
+- ~/Library/Application Support/Code/User/snippets/
+- ~/Library/Application Support/Little Snitch/configuration4.user.xpl
+
+- ~/Library/Application Support/Jumpcut/JCEngine.save
+- ~/Library/Preferences/net.sf.Jumpcut.plist
+
+- ~/Library/Application Support/Sublime Text/Packages/User
+- ~/Library/Preferences/com.apple.symbolichotkeys.plist
+- ~/Library/Preferences/com.googlecode.iterm2.plist
+- ~/Library/Preferences/com.surteesstudios.Bartender.plist
+- ~/Library/Preferences/com.binarynights.ForkLift-3.plist

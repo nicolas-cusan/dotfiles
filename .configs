@@ -1,0 +1,30 @@
+#!/bin/sh
+
+ICLOUD_DRIVE=~/Library/Mobile\ Documents/com~apple~CloudDocs/macOS
+APP_SUPORT=/Library/Application\ Support
+PREFS=/Library/Preferences
+
+CODE=${APP_SUPORT}/Code/User
+SUBL=${APP_SUPORT}/Sublime\ Text/Packages/User
+
+# Dotfiles
+ln -sf ${ICLOUD_DRIVE}/.gitconfig ~
+ln -sf ${ICLOUD_DRIVE}/.oh-my-zsh ~
+ln -sf ${ICLOUD_DRIVE}/.ssh/config ~/.ssh
+ln -sf ${ICLOUD_DRIVE}/.zshrc ~
+
+# VSCode
+ln -sf ${ICLOUD_DRIVE}${CODE}/keybindings.json ~${CODE}/keybindings.json
+ln -sf ${ICLOUD_DRIVE}${CODE}/settings.json ~${CODE}/settings.json
+ln -sf ${ICLOUD_DRIVE}${CODE}/snippets/ ~${CODE}/snippets/
+
+# Jumpcut
+ln -sf ${ICLOUD_DRIVE}${APP_SUPORT}/Jumpcut/JCEngine.save ~${APP_SUPORT}/Jumpcut/JCEngine.save
+ln -sf ${ICLOUD_DRIVE}${PREFS}/net.sf.Jumpcut.plist ~${PREFS}/net.sf.Jumpcut.plist
+
+# Misc
+ln -sf ${ICLOUD_DRIVE}${SUBL} ~${SUBL}
+ln -sf ${ICLOUD_DRIVE}${PREFS}/com.apple.symbolichotkeys.plist ~${PREFS}/com.apple.symbolichotkeys.plist
+ln -sf ${ICLOUD_DRIVE}${PREFS}/com.googlecode.iterm2.plist ~${PREFS}/com.googlecode.iterm2.plist
+ln -sf ${ICLOUD_DRIVE}${PREFS}/com.surteesstudios.Bartender.plist ~${PREFS}/com.surteesstudios.Bartender.plist
+ln -sf ${ICLOUD_DRIVE}${PREFS}/com.binarynights.ForkLift-3.plist ~${PREFS}/com.binarynights.ForkLift-3.plist
