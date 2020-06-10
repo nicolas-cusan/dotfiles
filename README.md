@@ -86,10 +86,10 @@ sh .vscode
 
 ### 8. Configuration
 
-Symlink configuration files stored in iCloud Drive. Perquisites before running the script:
+Symlink configuration files stored in iCloud Drive in a folder called `macOS`. Perquisites before running the script:
 
 - Make sure that iCloud has synced all files in the `macOS` folder.
-- Make sure that all programs have been opened at least once so that the target locations for the symlinks exist. No checks are performed by the script.
+- Make sure that all programs have been opened at least once so that the target locations for the symlinks exist. No checks for existing folders are performed by the script (for now).
 
 ```
 cd ~/.dotfiles
@@ -168,6 +168,7 @@ If `brew cask install virtualbox` produces errors it might be due to the fact th
 
 - Add global `.gitignore` & symlink to `~`
 - Define how to update / sync with other machine / react to changes in the files
+- Check for folder existence in `.config` script
 
 ## Links
 
