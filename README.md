@@ -56,8 +56,8 @@ What the script will do (in execution order):
 
 - Install homebrew formulae
 - Install cask binaries & powerline fonts
-- Install Xcode, Active Collab Timer & xScope via [mas](https://github.com/mas-cli/mas)
-- Set macOS System defaults
+- Install Xcode and Active Collab Timer via [mas](https://github.com/mas-cli/mas)
+- Set some macOS System defaults (see `.macos`)
 
 ### 5. oh my zsh
 
