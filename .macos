@@ -7,3 +7,6 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+
+# Set screenshot folder
+defaults write com.apple.screencapture location ~/Screenshots
