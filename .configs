@@ -7,11 +7,16 @@ PREFS=/Library/Preferences
 CODE=${APP_SUPORT}/Code/User
 SUBL=${APP_SUPORT}/Sublime\ Text/Packages/User
 
+echo ~${CODE}/keybindings.json
+
 # Dotfiles
 ln -sf ${ICLOUD_DRIVE}/.gitconfig ~
-ln -sf ${ICLOUD_DRIVE}/.oh-my-zsh ~
 ln -sf ${ICLOUD_DRIVE}/.ssh/config ~/.ssh
 ln -sf ${ICLOUD_DRIVE}/.zshrc ~
+
+# oh-my-zsh
+rm -r ~/.oh-my-zsh/custom
+ln -sf ${ICLOUD_DRIVE}/.oh-my-zsh/custom ~
 
 # VSCode
 ln -sf ${ICLOUD_DRIVE}${CODE}/keybindings.json ~${CODE}/keybindings.json
