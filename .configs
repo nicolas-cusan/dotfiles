@@ -1,35 +1,30 @@
 #!/bin/sh
 
-ICLOUD_DRIVE=~/Library/Mobile\ Documents/com~apple~CloudDocs/macOS
-APP_SUPORT=/Library/Application\ Support
-PREFS=/Library/Preferences
+ICLOUD_DRIVE="$HOME/Library/Mobile Documents/com~apple~CloudDocs/macOS"
+APP_SUPORT="/Library/Application Support"
+PREFS="/Library/Preferences"
 
-CODE=${APP_SUPORT}/Code/User
-SUBL=${APP_SUPORT}/Sublime\ Text/Packages/User
-
-echo ~${CODE}/keybindings.json
+CODE="$APP_SUPORT/Code/User"
+SUBL="$APP_SUPORT/Sublime Text/Packages/User"
 
 # Dotfiles
-ln -sf ${ICLOUD_DRIVE}/.gitconfig ~
-ln -sf ${ICLOUD_DRIVE}/.ssh/config ~/.ssh
-ln -sf ${ICLOUD_DRIVE}/.zshrc ~
-
-# oh-my-zsh
-rm -r ~/.oh-my-zsh/custom
-ln -sf ${ICLOUD_DRIVE}/.oh-my-zsh/custom ~
+ln -sf "${ICLOUD_DRIVE}/.gitconfig" ~
+ln -sf "${ICLOUD_DRIVE}/.ssh/config" ~/.ssh
+ln -sf "${ICLOUD_DRIVE}/.zshrc" ~
+ln -sf "${ICLOUD_DRIVE}/.oh-my-zsh/custom" ~/.oh-my-zsh
 
 # VSCode
-ln -sf ${ICLOUD_DRIVE}${CODE}/keybindings.json ~${CODE}/keybindings.json
-ln -sf ${ICLOUD_DRIVE}${CODE}/settings.json ~${CODE}/settings.json
-ln -sf ${ICLOUD_DRIVE}${CODE}/snippets/ ~${CODE}/snippets/
+ln -sf "${ICLOUD_DRIVE}${CODE}/keybindings.json" "${HOME}${CODE}/keybindings.json"
+ln -sf "${ICLOUD_DRIVE}${CODE}/settings.json" "${HOME}${CODE}/settings.json"
+ln -sf "${ICLOUD_DRIVE}${CODE}/snippets/" "${HOME}${CODE}/snippets/"
 
 # Jumpcut
-ln -sf ${ICLOUD_DRIVE}${APP_SUPORT}/Jumpcut/JCEngine.save ~${APP_SUPORT}/Jumpcut/JCEngine.save
-ln -sf ${ICLOUD_DRIVE}${PREFS}/net.sf.Jumpcut.plist ~${PREFS}/net.sf.Jumpcut.plist
+ln -sf "${ICLOUD_DRIVE}${APP_SUPORT}/Jumpcut/JCEngine.save" "${HOME}${APP_SUPORT}/Jumpcut/JCEngine.save"
+ln -sf "${ICLOUD_DRIVE}${PREFS}/net.sf.Jumpcut.plist" "${HOME}${PREFS}/net.sf.Jumpcut.plist"
 
 # Misc
-ln -sf ${ICLOUD_DRIVE}${SUBL} ~${SUBL}
-ln -sf ${ICLOUD_DRIVE}${PREFS}/com.apple.symbolichotkeys.plist ~${PREFS}/com.apple.symbolichotkeys.plist
-ln -sf ${ICLOUD_DRIVE}${PREFS}/com.googlecode.iterm2.plist ~${PREFS}/com.googlecode.iterm2.plist
-ln -sf ${ICLOUD_DRIVE}${PREFS}/com.surteesstudios.Bartender.plist ~${PREFS}/com.surteesstudios.Bartender.plist
-ln -sf ${ICLOUD_DRIVE}${PREFS}/com.binarynights.ForkLift-3.plist ~${PREFS}/com.binarynights.ForkLift-3.plist
+ln -sf "${ICLOUD_DRIVE}${SUBL}" "${HOME}${SUBL}"
+ln -sf "${ICLOUD_DRIVE}${PREFS}/com.apple.symbolichotkeys.plist" "${HOME}${PREFS}/com.apple.symbolichotkeys.plist"
+ln -sf "${ICLOUD_DRIVE}${PREFS}/com.googlecode.iterm2.plist" "${HOME}${PREFS}/com.googlecode.iterm2.plist"
+ln -sf "${ICLOUD_DRIVE}${PREFS}/com.surteesstudios.Bartender.plist" "${HOME}${PREFS}/com.surteesstudios.Bartender.plist"
+ln -sf "${ICLOUD_DRIVE}${PREFS}/com.binarynights.ForkLift-3.plist" "${HOME}${PREFS}/com.binarynights.ForkLift-3.plist"
