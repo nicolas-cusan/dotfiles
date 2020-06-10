@@ -90,6 +90,7 @@ Symlink configuration files stored in iCloud Drive. Perquisites before running t
 
 The following configuration files & folders files are symlinked (destination location shown):
 
+```
 - ~/.gitconfig
 - ~/.oh-my-zsh
 - ~/.zshrc
@@ -104,6 +105,7 @@ The following configuration files & folders files are symlinked (destination loc
 - ~/Library/Preferences/com.googlecode.iterm2.plist
 - ~/Library/Preferences/com.surteesstudios.Bartender.plist
 - ~/Library/Preferences/com.binarynights.ForkLift-3.plist
+```
 
 ```
 cd ~/.dotfiles
@@ -134,7 +136,9 @@ sh .configs
 - [x] Set Desktop Color
 - [x] Setup nexcloud account
 - [x] Sign in to all Slack teams
-- [ ] Install Adobe CC Programs (Adobe Creative Cloud.app is installed via `cask`)
+- [x] Setup licenses for all programs that require licenses
+- [x] Add new ssh key to services (GitHub, GitLab)
+- [x] Install Adobe CC Programs (Adobe Creative Cloud.app is installed via `cask`)
 - [ ] Transfer iTunes Music
 - [ ] Transfer relevant entries from `/etc/hosts/`
 - [ ] Importing old vagrant box (without existing dbs):
@@ -142,8 +146,6 @@ sh .configs
   - Copy vagrant folder (e.g. php72) & fresh box export to new computer
   - install box by using `vagrant box add <PATH_TO_BOX>`
   - `cd` to vagrant folder and run `vagrant up`
-- [ ] Setup licenses for all programs that require licenses
-- [ ] Add new ssh key to services (GitHub, GitLab)
 - [ ] Move old photos
 - [ ] Copy & import old Mailboxes ??
 - [ ] Transfer or install digital certificate
