@@ -16,7 +16,7 @@ ln -sf "${ICLOUD_DRIVE}/.oh-my-zsh/custom" ~/.oh-my-zsh
 # VSCode
 ln -sf "${ICLOUD_DRIVE}${CODE}/keybindings.json" "${HOME}${CODE}/keybindings.json"
 ln -sf "${ICLOUD_DRIVE}${CODE}/settings.json" "${HOME}${CODE}/settings.json"
-ln -sf "${ICLOUD_DRIVE}${CODE}/snippets/" "${HOME}${CODE}/snippets"
+ln -sf "${ICLOUD_DRIVE}${CODE}/snippets" "${HOME}${CODE}/snippets"
 
 # Jumpcut
 ln -sf "${ICLOUD_DRIVE}${APP_SUPORT}/Jumpcut/JCEngine.save" "${HOME}${APP_SUPORT}/Jumpcut/JCEngine.save"
