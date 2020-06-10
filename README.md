@@ -88,28 +88,28 @@ Symlink configuration files stored in iCloud Drive. Perquisites before running t
 - Make sure that iCloud has synced all files in the `macOS` folder.
 - Make sure that all programs have been opened at least once so that the target locations for the symlinks exist. No checks are performed by the script.
 
-The following configuration files & folders files are symlinked (destination location shown):
-
-```
-- ~/.gitconfig
-- ~/.oh-my-zsh
-- ~/.zshrc
-- ~/.ssh/config
-- ~/Library/Application Support/Code/User/keybindings.json
-- ~/Library/Application Support/Code/User/settings.json
-- ~/Library/Application Support/Code/User/snippets
-- ~/Library/Application Support/Jumpcut/JCEngine.save
-- ~/Library/Preferences/net.sf.Jumpcut.plist
-- ~/Library/Application Support/Sublime Text/Packages/User
-- ~/Library/Preferences/com.apple.symbolichotkeys.plist
-- ~/Library/Preferences/com.googlecode.iterm2.plist
-- ~/Library/Preferences/com.surteesstudios.Bartender.plist
-- ~/Library/Preferences/com.binarynights.ForkLift-3.plist
-```
-
 ```
 cd ~/.dotfiles
 sh .configs
+```
+
+The following configuration files & folders files are symlinked (destination location shown):
+
+```
+~/.gitconfig
+~/.oh-my-zsh
+~/.zshrc
+~/.ssh/config
+~/Library/Application Support/Code/User/keybindings.json
+~/Library/Application Support/Code/User/settings.json
+~/Library/Application Support/Code/User/snippets
+~/Library/Application Support/Jumpcut/JCEngine.save
+~/Library/Preferences/net.sf.Jumpcut.plist
+~/Library/Application Support/Sublime Text/Packages/User
+~/Library/Preferences/com.apple.symbolichotkeys.plist
+~/Library/Preferences/com.googlecode.iterm2.plist
+~/Library/Preferences/com.surteesstudios.Bartender.plist
+~/Library/Preferences/com.binarynights.ForkLift-3.plist
 ```
 
 ### 9. Install Little Snitch
