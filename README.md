@@ -1,17 +1,20 @@
 # .dotfiles
 
-## Setup new macos box
+This repo does not really contain my dotfiles (at least for now). It rather helps to setup a new macOS box step by step. These scripts are optimized for my own system use at your own risk. They were last installed on macOS 10.15.5 (Catalina)
 
-### 1. Initial steps when setting up a new macOS system
+## Setup sequence
+
+### 1. Initial steps
 
 - Initial mac setup via system dialogs
   - User Filevault
   - Use Locations services
-- Check for Updates macOS updates & install if any
+- After install check for macOS updates & install if any
 - Setup iCloud preferences
 - Setup sharing preferences
   - Change computer name
   - Make sure all file sharing is disabled
+- Setup preferences for Finder, Dock, Destop, Keyboard, Mouse & Trackpad, etc.
 
 ### 2. Install Homebrew
 
