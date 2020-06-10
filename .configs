@@ -5,7 +5,7 @@ APP_SUPORT="/Library/Application Support"
 PREFS="/Library/Preferences"
 
 CODE="$APP_SUPORT/Code/User"
-SUBL="$APP_SUPORT/Sublime Text 3/Packages/User"
+SUBL="$APP_SUPORT/Sublime Text 3/Packages"
 
 # Dotfiles
 ln -sf "${ICLOUD_DRIVE}/.gitconfig" ~
@@ -23,7 +23,7 @@ ln -sf "${ICLOUD_DRIVE}${APP_SUPORT}/Jumpcut/JCEngine.save" "${HOME}${APP_SUPORT
 ln -sf "${ICLOUD_DRIVE}${PREFS}/net.sf.Jumpcut.plist" "${HOME}${PREFS}/net.sf.Jumpcut.plist"
 
 # Misc
-ln -sf "${ICLOUD_DRIVE}${SUBL}" "${HOME}${SUBL}"
+ln -sf "${ICLOUD_DRIVE}${SUBL}/User" "${HOME}${SUBL}"
 ln -sf "${ICLOUD_DRIVE}${PREFS}/com.apple.symbolichotkeys.plist" "${HOME}${PREFS}/com.apple.symbolichotkeys.plist"
 ln -sf "${ICLOUD_DRIVE}${PREFS}/com.googlecode.iterm2.plist" "${HOME}${PREFS}/com.googlecode.iterm2.plist"
 ln -sf "${ICLOUD_DRIVE}${PREFS}/com.surteesstudios.Bartender.plist" "${HOME}${PREFS}/com.surteesstudios.Bartender.plist"
