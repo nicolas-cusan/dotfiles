@@ -104,8 +104,8 @@ The following configuration files & folders files are symlinked (destination loc
 ~/Library/Application Support/Code/User/settings.json
 ~/Library/Application Support/Code/User/snippets
 ~/Library/Application Support/Jumpcut/JCEngine.save
-~/Library/Preferences/net.sf.Jumpcut.plist
 ~/Library/Application Support/Sublime Text/Packages/User
+~/Library/Preferences/net.sf.Jumpcut.plist
 ~/Library/Preferences/com.apple.symbolichotkeys.plist
 ~/Library/Preferences/com.googlecode.iterm2.plist
 ~/Library/Preferences/com.surteesstudios.Bartender.plist
@@ -163,10 +163,8 @@ If `brew cask install virtualbox` produces errors it might be due to the fact th
 
 ## Todo
 
-- Add global gitignore
-- Handle dotfiles manually instead of via mackup
+- Add global `.gitignore`
 - Define how to update / sync with other machine / react to changes in the files
-- Update macos settings with this: https://raw.githubusercontent.com/mathiasbynens/dotfiles/master/.macos. Ideally compare to fresh install defaults
 
 ## Links
 
