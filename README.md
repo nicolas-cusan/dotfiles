@@ -46,16 +46,15 @@ Run the setup script
 
 ```
 cd ~/.dotfiles
-sh setup.sh
+sh install.sh
 ```
 
 What the script will do (in execution order):
 
 - Install homebrew formulae
 - Install cask binaries & powerline fonts
-- Set macOS System defaults
 - Install Xcode, Active Collab Timer & xScope via [mas](https://github.com/mas-cli/mas)
-- Setup the dock
+- Set macOS System defaults
 
 ### 5. oh my zsh
 
@@ -79,27 +78,51 @@ npm install -g npm prettier npm-check-updates
 
 ```
 cd ~/.dotfiles
-sh vscode.sh
+sh .vscode
 ```
 
 ### 8. Configuration
 
-Install config files (dotfiles & mac app files) via [mackup](https://github.com/lra/mackup) (backupd on Dropbox, will change to iCloud Drive)
+Symlink configuration files stored in iCloud Drive. Perquisites before running the script:
+
+- Make sure that iCloud has synced all files in the `macOS` folder.
+- Make sure that all programs have been opened at least once so that the target locations for the symlinks exist. No checks are performed by the script.
+
+The following configuration files & folders files are symlinked (destination location shown):
+
+- ~/.gitconfig
+- ~/.oh-my-zsh
+- ~/.zshrc
+- ~/.ssh/config
+- ~/Library/Application Support/Code/User/keybindings.json
+- ~/Library/Application Support/Code/User/settings.json
+- ~/Library/Application Support/Code/User/snippets
+- ~/Library/Application Support/Jumpcut/JCEngine.save
+- ~/Library/Preferences/net.sf.Jumpcut.plist
+- ~/Library/Application Support/Sublime Text/Packages/User
+- ~/Library/Preferences/com.apple.symbolichotkeys.plist
+- ~/Library/Preferences/com.googlecode.iterm2.plist
+- ~/Library/Preferences/com.surteesstudios.Bartender.plist
+- ~/Library/Preferences/com.binarynights.ForkLift-3.plist
 
 ```
 cd ~/.dotfiles
-sh config.sh
+sh .configs
 ```
 
 ### 9. Install Little Snitch
 
-`.dmg` file installed via cask will be located at `/usr/local/Caskroom/little-snitch/` and has to be executed manually, restart computer (required) and enter license-key. Export rules via Little Snitch backup feature and import on new the new computer.
+- Execute `.dmg` file installed via cask located at `/usr/local/Caskroom/little-snitch/` manually.
+- Restart computer (required)
+- Enter license-key.
+- On the old machine, export rules via Little Snitch backup feature and import in the fresh installation.
 
 ### 10. Further manual steps
 
 - [x] Sing-in to Chrome
 - [x] Sing-in to Firefox
-- [x] Setup Mail Accounts & Calendar
+- [x] Setup Mail Accounts
+- [x] Setup Calendar https://config.infomaniak.com/
 - [x] Setup login items:
   - Thyme
   - nextcloud
@@ -111,32 +134,30 @@ sh config.sh
 - [x] Set Desktop Color
 - [x] Setup nexcloud account
 - [x] Sign in to all Slack teams
-- [ ] Install Adobe CC
+- [ ] Install Adobe CC Programs (Adobe Creative Cloud.app is installed via `cask`)
 - [ ] Transfer iTunes Music
 - [ ] Transfer relevant entries from `/etc/hosts/`
 - [ ] Importing old vagrant box (without existing dbs):
-  1. On old system export old vagrant box, useing `vagrant box list` to get the name, provider and ID and `vagrant box repackage` to package it.
-  2. Copy vagrant folder (e.g. php72) & fresh box export to new computer
-  3. install box by using `vagrant box add <PATH_TO_BOX>`
-  4. `cd` to vagrant folder and run `vagrant up`
+  - On old system export old vagrant box, useing `vagrant box list` to get the name, provider and ID and `vagrant box repackage` to package it.
+  - Copy vagrant folder (e.g. php72) & fresh box export to new computer
+  - install box by using `vagrant box add <PATH_TO_BOX>`
+  - `cd` to vagrant folder and run `vagrant up`
 - [ ] Setup licenses for all programs that require licenses
 - [ ] Add new ssh key to services (GitHub, GitLab)
 - [ ] Move old photos
 - [ ] Copy & import old Mailboxes ??
 - [ ] Transfer or install digital certificate
 
-## Issues on last install (05.06.2020)
+## Caveats
 
-- `brew cask install dash` not working, wrong download link
-- `brew cask install jdownload` throws an error claiming that jDownloader requires java to work (but seems to work fine)
-- `brew cask install xscope` not working, checksum not matching. Installed via `mas`
-- The `nextcloud` account login does not work with the latest client version. Installed an old version manually to get it working.
-- `macos.sh` did not run smoothly, it seems to have some option that makes the script execution fail & stop. Should be updated (see todos).
-- `brew cask install virtualbox` produces some errors as the installer is not signed. If lucky a accept dialog is shown in `System Preferences > Security & privacy > General`. If not you need to add Oracle to the list of trusted developers:
-  1. Boot into recovery mode: Shut down the system and hold `Cmd + R` while booting.
-  2. Enter your password in the recover password screen (you might be able to skip this step if your drive is not encrypted).
-  3. Open the terminal and enter `spctl kext-consent add VR5E2TV963` (allow the ID for Oracle).
-  4. Restart and try installation again.
+### Installing VirtualBox via `cask`
+
+If `brew cask install virtualbox` produces errors it might be due to the fact that the installer is not signed. If you are lucky a accept dialog is shown in `System Preferences > Security & privacy > General`. If not you need to add Oracle to the list of trusted developers:
+
+- Boot into recovery mode: Shut down the system and hold `Cmd + R` while booting.
+- Enter your password in the recover password screen (you might be able to skip this step if your drive is not encrypted).
+- Open the terminal and enter `spctl kext-consent add VR5E2TV963` (allow the ID for Oracle).
+- Restart and try installation again.
 
 ## Todo
 
@@ -160,23 +181,3 @@ sh config.sh
 - ~ https://github.com/nicknisi/dotfiles
 - ~ https://github.com/zsh-users/zsh-syntax-highlighting
 - https://blog.macsales.com/55671-move-or-manage-the-music-apple-tv-and-podcasts-libraries/
-
-## Files to backup
-
-- ~/.gitconfig
-- ~/.oh-my-zsh/
-- ~/.ssh/config
-- ~/.zshrc
-- ~/Library/Application Support/Code/User/keybindings.json
-- ~/Library/Application Support/Code/User/settings.json
-- ~/Library/Application Support/Code/User/snippets/
-- ~/Library/Application Support/Little Snitch/configuration4.user.xpl
-
-- ~/Library/Application Support/Jumpcut/JCEngine.save
-- ~/Library/Preferences/net.sf.Jumpcut.plist
-
-- ~/Library/Application Support/Sublime Text/Packages/User
-- ~/Library/Preferences/com.apple.symbolichotkeys.plist
-- ~/Library/Preferences/com.googlecode.iterm2.plist
-- ~/Library/Preferences/com.surteesstudios.Bartender.plist
-- ~/Library/Preferences/com.binarynights.ForkLift-3.plist

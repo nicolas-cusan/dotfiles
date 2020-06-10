@@ -21,6 +21,7 @@ brew cask install font-meslo-for-powerline
 brew cask install font-source-code-pro
 
 # Casks
+brew cask install adobe-creative-cloud
 brew cask install authy
 # brew cask install autofirma
 brew cask install bartender
@@ -67,9 +68,8 @@ brew cask install the-unarchiver
 brew cask install thyme
 brew cask install transmission
 brew cask install vagrant
-# brew cask install virtualbox
+brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
-# not working atm.
-# brew cask install xscope
+brew cask install xscope
 brew cleanup
