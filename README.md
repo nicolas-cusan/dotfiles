@@ -163,7 +163,7 @@ If `brew cask install virtualbox` produces errors it might be due to the fact th
 
 ## Todo
 
-- Add global `.gitignore`
+- Add global `.gitignore` & symlink to `~`
 - Define how to update / sync with other machine / react to changes in the files
 
 ## Links
