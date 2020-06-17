@@ -152,6 +152,7 @@ The following configuration files & folders files are symlinked (destination loc
 - [ ] Move old photos
 - [ ] Copy & import old local mailboxes
 - [ ] Transfer or install digital certificate
+- [ ] Add shared ssh keys to session via `ssh-add -K`
 
 ## Caveats
 
