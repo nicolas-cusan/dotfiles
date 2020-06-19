@@ -14,7 +14,7 @@ This repo does not really contain my dotfiles (at least for now). It rather help
 - Setup sharing preferences
   - Change computer name
   - Make sure all file sharing is disabled
-- Setup preferences for Finder, Dock, Destop, Keyboard, Mouse & Trackpad, etc.
+- Setup preferences for Finder, Dock, Destop, Keyboard, Mouse & Trackpad, Spotlight, etc.
 
 ### 2. Install Homebrew
 
