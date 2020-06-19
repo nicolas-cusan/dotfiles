@@ -2,6 +2,7 @@
 
 echo -e "\\n\\nInstalling brew packages"
 echo "=============================="
+echo "\\n"
 
 # Make sure we’re using the latest Homebrew.
 brew update

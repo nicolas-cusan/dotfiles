@@ -3,6 +3,7 @@
  if hash code 2>/dev/null; then
   echo -e "\\n\\nInstalling VSCode extensions"
   echo "=============================="
+  echo "\\n"
   code --install-extension adrianhumphreys.silverstripe
   code --install-extension alefragnani.Bookmarks
   code --install-extension ban.spellright

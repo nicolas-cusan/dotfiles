@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo -e "\\n\\nInstalling appstore packages"
+echo "=============================="
+echo "\\n"
+
 # Xcode
 mas install 497799835
 

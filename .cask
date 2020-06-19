@@ -1,7 +1,8 @@
 #!/bin/sh
 
-echo -e "\\n\\nInstalling Cask binaries"
+echo -e "\\n\\nInstalling cask binaries"
 echo "=============================="
+echo "\\n"
 
 # Install command-line tools using Homebrew.
 # Install Brew and Cask manually
