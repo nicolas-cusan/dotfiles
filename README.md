@@ -147,7 +147,7 @@ The following configuration files & folders files are symlinked (destination loc
 - [ ] Importing old vagrant box (without existing dbs):
   - On old system export old vagrant box, useing `vagrant box list` to get the name, provider and ID and `vagrant box repackage` to package it.
   - Copy vagrant folder (e.g. php72) & fresh box export to new computer
-  - install box by using `vagrant box add <PATH_TO_BOX>`
+  - install box by using `vagrant box add <PATH_TO_BOX> --name <SOME_NAME>`
   - `cd` to vagrant folder and run `vagrant up`
 - [ ] Move old photos
 - [ ] Copy & import old local mailboxes
