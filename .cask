@@ -56,6 +56,7 @@ brew cask install quicklook-json
 brew cask install rectangle
 brew cask install rightfont
 brew cask install robo-3t
+brew cask install sequel-pro
 brew cask install signal
 brew cask install sketch
 brew cask install skype
