@@ -56,6 +56,7 @@ defaults write NSGlobalDomain AppleLanguages -array ${LANGUAGES[@]}
 defaults write NSGlobalDomain AppleLocale -string "$LOCALE"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "$MEASUREMENT_UNITS"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
+defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 
 # Using systemsetup might give Error:-99, can be ignored (commands still work)
 # systemsetup manpage: https://ss64.com/osx/systemsetup.html
