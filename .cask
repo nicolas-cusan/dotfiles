@@ -13,7 +13,8 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew install --cask autofirma
+# brew install --cask authy
+# brew install --cask autofirma
 brew install --cask beekeeper-studio
 brew install --cask bitwarden
 brew install --cask brave-browser
@@ -24,7 +25,7 @@ brew install --cask docker
 brew install --cask figma
 brew install --cask firefox
 brew install --cask font-meslo-lg-nerd-font
-brew install --cask fontforge
+# brew install --cask fontforge
 brew install --cask google-chrome
 brew install --cask imagealpha
 brew install --cask imageoptim
@@ -47,7 +48,7 @@ brew install --cask --no-quarantine syntax-highlight
 brew install --cask rectangle
 brew install --cask rightfont
 brew install --cask screaming-frog-seo-spider
-brew install --cask sequel-pro
+brew install --cask sequel-ace
 brew install --cask signal
 brew install --cask slack
 brew install --cask soulver

@@ -21,6 +21,8 @@ This repo does not really contain my dotfiles (at least for now). It rather help
   - MS Apps
   - Apple Office
   - xScope 4
+- Other Software
+  - Autofirma
 - Setup preferences for Finder, Dock, Destop, Keyboard, Mouse & Trackpad, Spotlight, etc.
 
 ### 2. Install Homebrew

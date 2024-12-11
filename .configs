@@ -8,7 +8,7 @@ CODE="$APP_SUPORT/Cursor/User"
 
 # Dotfiles
 ln -sf "${ICLOUD_DRIVE}/.gitconfig" ~
-ln -sf "${ICLOUD_DRIVE}/.ssh/config" ~/.ssh
+# ln -sf "${ICLOUD_DRIVE}/.ssh/config" ~/.ssh
 ln -sf "${ICLOUD_DRIVE}/.zshrc" ~
 ln -sf "${ICLOUD_DRIVE}/.oh-my-zsh/custom" ~/.oh-my-zsh
 
