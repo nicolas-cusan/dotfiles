@@ -2,5 +2,5 @@
 
 source .brew
 source .cask
-source .appstore
+# source .appstore
 source .macos

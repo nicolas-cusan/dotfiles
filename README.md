@@ -11,9 +11,16 @@ This repo does not really contain my dotfiles (at least for now). It rather help
   - Use Locations services
 - After install check for macOS updates & install if any
 - Setup iCloud preferences
-- Setup sharing preferences
+- Setup Sharing preferences
   - Change computer name
   - Make sure all file sharing is disabled
+- Use AppStore to install
+  - Xcode
+  - Tim
+  - WireGuard
+  - MS Apps
+  - Apple Office
+  - xScope 4
 - Setup preferences for Finder, Dock, Destop, Keyboard, Mouse & Trackpad, Spotlight, etc.
 
 ### 2. Install Homebrew
@@ -56,7 +63,6 @@ What the script will do (in execution order):
 
 - Install homebrew formulae
 - Install cask binaries & powerline fonts
-- Install Xcode and Active Collab Timer via [mas](https://github.com/mas-cli/mas)
 - Set some macOS System defaults (see `.macos`)
 
 ### 5. oh my zsh
@@ -153,17 +159,6 @@ The following configuration files & folders files are symlinked (destination loc
 - [ ] Copy & import old local mailboxes
 - [ ] Transfer or install digital certificate
 - [ ] Add shared ssh keys to session via `ssh-add -K`
-
-## Caveats
-
-### Installing VirtualBox via `cask`
-
-If `brew cask install virtualbox` produces errors it might be due to the fact that the installer is not signed. If you are lucky a accept dialog is shown in `System Preferences > Security & privacy > General`. If not you need to add Oracle to the list of trusted developers:
-
-- Boot into recovery mode: Shut down the system and hold `Cmd + R` while booting.
-- Enter your password in the recover password screen (you might be able to skip this step if your drive is not encrypted).
-- Open the terminal and enter `spctl kext-consent add VR5E2TV963` (allow the ID for Oracle).
-- Restart and try installation again.
 
 ## Todo
 

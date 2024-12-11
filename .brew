@@ -10,21 +10,31 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+brew install asdf
 brew install composer
 brew install coreutils
 brew install curl
-brew install dockutil
+brew install direnv
+brew install drud/ddev/ddev
+brew install erlang
 brew install ffmpeg
+brew install flyctl
+brew install gh
 brew install git
-brew install grip
-brew install mackup
-brew install mas
+brew install go
+brew install grep
+brew install imagemagick
+brew install make
 brew install mysql
 brew install openssh
-brew install php@7.2
-brew install python3
-brew install rbenv
-brew install yarn
+brew install pnpm
+brew install postgresql
+brew install python
+brew install stripe/stripe-cli/stripe
 brew install wget
+brew install wireguard-tools
+brew install z
 brew install zsh
 brew install zsh-autosuggestions
+
+mkcert -install
