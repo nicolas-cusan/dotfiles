@@ -13,7 +13,6 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew install --cask authy
 brew install --cask autofirma
 brew install --cask beekeeper-studio
 brew install --cask bitwarden
