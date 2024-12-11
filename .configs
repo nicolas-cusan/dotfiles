@@ -10,12 +10,12 @@ CODE="$APP_SUPORT/Cursor/User"
 ln -sf "${ICLOUD_DRIVE}/.gitconfig" ~
 # ln -sf "${ICLOUD_DRIVE}/.ssh/config" ~/.ssh
 ln -sf "${ICLOUD_DRIVE}/.zshrc" ~
-ln -sf "${ICLOUD_DRIVE}/.oh-my-zsh/custom" ~/.oh-my-zsh
+# ln -sf "${ICLOUD_DRIVE}/.oh-my-zsh/custom" ~/.oh-my-zsh
 
 # Cursor
-ln -sf "${ICLOUD_DRIVE}${CODE}/keybindings.json" "${HOME}${CODE}/keybindings.json"
-ln -sf "${ICLOUD_DRIVE}${CODE}/settings.json" "${HOME}${CODE}/settings.json"
-ln -sf "${ICLOUD_DRIVE}${CODE}/snippets" "${HOME}${CODE}"
+# ln -sf "${ICLOUD_DRIVE}${CODE}/keybindings.json" "${HOME}${CODE}/keybindings.json"
+# ln -sf "${ICLOUD_DRIVE}${CODE}/settings.json" "${HOME}${CODE}/settings.json"
+# ln -sf "${ICLOUD_DRIVE}${CODE}/snippets" "${HOME}${CODE}"
 
 # Jumpcut
 ln -sf "${ICLOUD_DRIVE}${APP_SUPORT}/Jumpcut/JCEngine.save" "${HOME}${APP_SUPORT}/Jumpcut/JCEngine.save"

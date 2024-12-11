@@ -108,19 +108,10 @@ The following configuration files & folders files are symlinked (destination loc
 
 ```
 ~/.gitconfig
-~/.oh-my-zsh
 ~/.zshrc
-~/.ssh/config
-~/Library/Application Support/Code/User/keybindings.json
-~/Library/Application Support/Code/User/settings.json
-~/Library/Application Support/Code/User/snippets
-~/Library/Application Support/Jumpcut/JCEngine.save
-~/Library/Application Support/Sublime Text/Packages/User
 ~/Library/Preferences/net.sf.Jumpcut.plist
 ~/Library/Preferences/com.apple.symbolichotkeys.plist
 ~/Library/Preferences/com.googlecode.iterm2.plist
-~/Library/Preferences/com.surteesstudios.Bartender.plist
-~/Library/Preferences/com.binarynights.ForkLift-3.plist
 ```
 
 ### 9. Install Little Snitch
