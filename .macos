@@ -78,6 +78,9 @@ defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 # Disable Sudden Motion Sensor
 # sudo pmset -a sms 0
 
+# Show all files in Finder
+defaults write -g AppleShowAllFiles -bool true
+
 # Disable audio feedback when volume is changed
 defaults write com.apple.sound.beep.feedback -bool false
 
@@ -207,7 +210,7 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 defaults write com.apple.finder DisableAllAnimations -bool true
 
 # Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+# defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -222,7 +225,7 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+# defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Keep folders on top when sorting by name
 # defaults write com.apple.finder _FXSortFoldersFirst -bool true
