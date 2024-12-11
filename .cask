@@ -33,6 +33,7 @@ brew install --cask inkscape
 brew install --cask iterm2
 brew install --cask jdownloader
 brew install --cask jumpcut
+brew install --cask languagetool
 brew install --cask libreoffice
 brew install --cask little-snitch
 brew install --cask microsoft-teams
